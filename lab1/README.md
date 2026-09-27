@@ -1,43 +1,56 @@
-# Lab 1 - TensorFlow/Keras Setup and Data Preprocessing
+# Data Preprocessing and Visualization using TensorFlow/Keras
 
-## Objective
+## Introduction
 
-Install and configure TensorFlow/Keras in Google Colab and perform basic data preprocessing, normalization, train-test splitting, and visualization on a sample dataset.
+This practical focuses on setting up and using **TensorFlow/Keras in Google Colab** for basic deep learning workflows. It demonstrates the essential steps involved in preparing data for a machine learning model, including data preprocessing, normalization, train-test splitting, and visualization.
 
-## Tasks Performed
+The practical provides a foundation for working with datasets in TensorFlow/Keras and understanding how raw data is transformed into a form suitable for training a deep learning model.
 
-- Installed and configured TensorFlow/Keras in Google Colab.
-- Loaded a sample dataset.
-- Performed data preprocessing.
-- Normalized the input data.
-- Split the dataset into training and testing sets.
-- Visualized sample data using plots.
-- Examined the shape and structure of the dataset.
+---
 
-## Technologies Used
+## Project Overview
 
-- Python
-- Google Colab
-- TensorFlow
-- Keras
-- NumPy
-- Matplotlib
-- Scikit-learn
+The main objectives of this practical are:
 
-## Notebook
+- Install and configure TensorFlow/Keras in Google Colab.
+- Load and inspect a sample dataset.
+- Perform basic data preprocessing.
+- Normalize the input data.
+- Divide the dataset into training and testing sets.
+- Visualize the dataset and its characteristics.
+- Understand the importance of preprocessing before model training.
 
-The implementation is provided in:
+---
 
-`DL_A1.ipynb`
+## Machine Learning Pipeline
 
-## How to Run
-
-1. Open `DL_A1.ipynb` in Google Colab.
-2. Run the notebook cells sequentially.
-3. Install/import the required libraries when prompted.
-4. Execute the preprocessing and visualization steps.
-5. Observe the resulting dataset information and visualizations.
-
-## Conclusion
-
-This practical demonstrates the basic setup required for deep learning experiments using TensorFlow/Keras and covers important preprocessing steps such as normalization, dataset splitting, and visualization.
+```text
+                 Sample Dataset
+                       │
+                       ▼
+                  Load Dataset
+                       │
+                       ▼
+                Inspect Dataset
+                       │
+                       ▼
+              Data Preprocessing
+                       │
+             ┌─────────┴─────────┐
+             │                   │
+        Cleaning/Handling     Normalization
+             │                   │
+             └─────────┬─────────┘
+                       ▼
+                Train-Test Split
+                       │
+             ┌─────────┴─────────┐
+             │                   │
+        Training Data        Testing Data
+             │                   │
+             └─────────┬─────────┘
+                       ▼
+                  Visualization
+                       │
+                       ▼
+               Prepared Dataset
